@@ -1,0 +1,264 @@
+<SEC-DOCUMENT>0001980155-23-000002.txt : 20230606
+<SEC-HEADER>0001980155-23-000002.hdr.sgml : 20230606
+<ACCEPTANCE-DATETIME>20230606124425
+ACCESSION NUMBER:		0001980155-23-000002
+CONFORMED SUBMISSION TYPE:	D
+PUBLIC DOCUMENT COUNT:		1
+ITEM INFORMATION:		<ITEMS>06b
+ITEM INFORMATION:		Investment Company Act Section 3(c)
+ITEM INFORMATION:		Section 3(c)(1)
+FILED AS OF DATE:		20230606
+DATE AS OF CHANGE:		20230606
+EFFECTIVENESS DATE:		20230606
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			LU-0503 Gaingels Fund I, a series of 2022 Ventures Early, LP
+		CENTRAL INDEX KEY:			0001980155
+		IRS NUMBER:				000000000
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		D
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	021-483444
+		FILM NUMBER:		23995392
+
+	BUSINESS ADDRESS:	
+		STREET 1:		119 SOUTH MAIN STREET
+		STREET 2:		SUITE 220
+		CITY:			SEATTLE
+		STATE:			WA
+		ZIP:			98104
+		BUSINESS PHONE:		2068016359
+
+	MAIL ADDRESS:	
+		STREET 1:		119 SOUTH MAIN STREET
+		STREET 2:		SUITE 220
+		CITY:			SEATTLE
+		STATE:			WA
+		ZIP:			98104
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			LU-0503 Gaingels Fund I AL Vehicle, a series of 2022 Ventures Early, LP
+		CENTRAL INDEX KEY:			0001980283
+		IRS NUMBER:				000000000
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		D
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	021-483444-01
+		FILM NUMBER:		23995393
+
+	BUSINESS ADDRESS:	
+		STREET 1:		119 SOUTH MAIN STREET
+		STREET 2:		SUITE 220
+		CITY:			SEATTLE
+		STATE:			WA
+		ZIP:			98104
+		BUSINESS PHONE:		2068016359
+
+	MAIL ADDRESS:	
+		STREET 1:		119 SOUTH MAIN STREET
+		STREET 2:		SUITE 220
+		CITY:			SEATTLE
+		STATE:			WA
+		ZIP:			98104
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>D
+<SEQUENCE>1
+<FILENAME>primary_doc.xml
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<edgarSubmission>
+
+    <schemaVersion>X0708</schemaVersion>
+
+    <submissionType>D</submissionType>
+
+    <testOrLive>LIVE</testOrLive>
+
+    <primaryIssuer>
+        <cik>0001980155</cik>
+        <entityName>LU-0503 Gaingels Fund I, a series of 2022 Ventures Early, LP</entityName>
+        <issuerAddress>
+            <street1>119 SOUTH MAIN STREET</street1>
+            <street2>SUITE 220</street2>
+            <city>SEATTLE</city>
+            <stateOrCountry>WA</stateOrCountry>
+            <stateOrCountryDescription>WASHINGTON</stateOrCountryDescription>
+            <zipCode>98104</zipCode>
+        </issuerAddress>
+        <issuerPhoneNumber>2068016359</issuerPhoneNumber>
+        <jurisdictionOfInc>DELAWARE</jurisdictionOfInc>
+        <issuerPreviousNameList>
+            <value>None</value>
+        </issuerPreviousNameList>
+        <edgarPreviousNameList>
+            <value>None</value>
+        </edgarPreviousNameList>
+        <entityType>Limited Partnership</entityType>
+        <yearOfInc>
+            <withinFiveYears>true</withinFiveYears>
+            <value>2023</value>
+        </yearOfInc>
+    </primaryIssuer>
+
+    <issuerList>
+        <issuer>
+            <cik>0001980283</cik>
+            <entityName>LU-0503 Gaingels Fund I AL Vehicle, a series of 2022 Ventures Early, LP</entityName>
+            <issuerAddress>
+                <street1>119 SOUTH MAIN STREET</street1>
+                <street2>SUITE 220</street2>
+                <city>SEATTLE</city>
+                <stateOrCountry>WA</stateOrCountry>
+                <stateOrCountryDescription>WASHINGTON</stateOrCountryDescription>
+                <zipCode>98104</zipCode>
+            </issuerAddress>
+            <issuerPhoneNumber>2068016359</issuerPhoneNumber>
+            <jurisdictionOfInc>DELAWARE</jurisdictionOfInc>
+            <issuerPreviousNameList>
+                <value>None</value>
+            </issuerPreviousNameList>
+            <edgarPreviousNameList>
+                <value>None</value>
+            </edgarPreviousNameList>
+            <entityType>Limited Partnership</entityType>
+            <yearOfInc>
+                <withinFiveYears>true</withinFiveYears>
+                <value>2023</value>
+            </yearOfInc>
+        </issuer>
+    </issuerList>
+
+    <relatedPersonsList>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>LLC</firstName>
+                <lastName>Fund GP,</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>PO Box 3217</street1>
+                <city>Seattle</city>
+                <stateOrCountry>WA</stateOrCountry>
+                <stateOrCountryDescription>WASHINGTON</stateOrCountryDescription>
+                <zipCode>98114</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>General partner of the Issuers</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Ltd.</firstName>
+                <lastName>Belltower Fund Group,</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>119 South Main St, Suite 220</street1>
+                <city>Seattle</city>
+                <stateOrCountry>WA</stateOrCountry>
+                <stateOrCountryDescription>WASHINGTON</stateOrCountryDescription>
+                <zipCode>98104</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Manager of the general partner of the Issuers</relationshipClarification>
+        </relatedPersonInfo>
+    </relatedPersonsList>
+
+    <offeringData>
+        <industryGroup>
+            <industryGroupType>Pooled Investment Fund</industryGroupType>
+            <investmentFundInfo>
+                <investmentFundType>Venture Capital Fund</investmentFundType>
+                <is40Act>false</is40Act>
+            </investmentFundInfo>
+        </industryGroup>
+        <issuerSize>
+            <revenueRange>Decline to Disclose</revenueRange>
+        </issuerSize>
+        <federalExemptionsExclusions>
+            <item>06b</item>
+            <item>3C</item>
+            <item>3C.1</item>
+        </federalExemptionsExclusions>
+        <typeOfFiling>
+            <newOrAmendment>
+                <isAmendment>false</isAmendment>
+            </newOrAmendment>
+            <dateOfFirstSale>
+                <value>2023-06-02</value>
+            </dateOfFirstSale>
+        </typeOfFiling>
+        <durationOfOffering>
+            <moreThanOneYear>false</moreThanOneYear>
+        </durationOfOffering>
+        <typesOfSecuritiesOffered>
+            <isPooledInvestmentFundType>true</isPooledInvestmentFundType>
+        </typesOfSecuritiesOffered>
+        <businessCombinationTransaction>
+            <isBusinessCombinationTransaction>false</isBusinessCombinationTransaction>
+            <clarificationOfResponse></clarificationOfResponse>
+        </businessCombinationTransaction>
+        <minimumInvestmentAccepted>1000</minimumInvestmentAccepted>
+        <salesCompensationList></salesCompensationList>
+        <offeringSalesAmounts>
+            <totalOfferingAmount>111000</totalOfferingAmount>
+            <totalAmountSold>111000</totalAmountSold>
+            <totalRemaining>0</totalRemaining>
+            <clarificationOfResponse>Amounts shown here include totals from the Issuer and a parallel fund of the Issuer.</clarificationOfResponse>
+        </offeringSalesAmounts>
+        <investors>
+            <hasNonAccreditedInvestors>false</hasNonAccreditedInvestors>
+            <totalNumberAlreadyInvested>12</totalNumberAlreadyInvested>
+        </investors>
+        <salesCommissionsFindersFees>
+            <salesCommissions>
+                <dollarAmount>0</dollarAmount>
+            </salesCommissions>
+            <findersFees>
+                <dollarAmount>0</dollarAmount>
+            </findersFees>
+            <clarificationOfResponse></clarificationOfResponse>
+        </salesCommissionsFindersFees>
+        <useOfProceeds>
+            <grossProceedsUsed>
+                <dollarAmount>8739</dollarAmount>
+                <isEstimate>true</isEstimate>
+            </grossProceedsUsed>
+            <clarificationOfResponse>This amount represents the dollar value of a one-time fee and an annual fee paid to the fund administrator and/or its affiliates to cover administrative expenses for the life of the fund.</clarificationOfResponse>
+        </useOfProceeds>
+        <signatureBlock>
+            <authorizedRepresentative>false</authorizedRepresentative>
+            <signature>
+                <issuerName>LU-0503 Gaingels Fund I, a series of 2022 Ventures Early, LP</issuerName>
+                <signatureName>/s/ Cathy Bui</signatureName>
+                <nameOfSigner>Cathy Bui</nameOfSigner>
+                <signatureTitle>Authorized Officer of the Manager of Issuers' GP</signatureTitle>
+                <signatureDate>2023-06-06</signatureDate>
+            </signature>
+            <signature>
+                <issuerName>LU-0503 Gaingels Fund I AL Vehicle, a series of 2022 Ventures Early, LP</issuerName>
+                <signatureName>/s/ Cathy Bui</signatureName>
+                <nameOfSigner>Cathy Bui</nameOfSigner>
+                <signatureTitle>Authorized Officer of the Manager of Issuers' GP</signatureTitle>
+                <signatureDate>2023-06-06</signatureDate>
+            </signature>
+        </signatureBlock>
+    </offeringData>
+</edgarSubmission>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

@@ -3,6 +3,7 @@ import logging
 import os
 import re
 import uu
+from dataclasses import dataclass
 
 from secedgar.exceptions import FilingTypeError
 from secedgar.utils import make_path
@@ -240,7 +241,6 @@ class MetaParser:
         metadata_doc["filename"] = fn_m.group(1)
 
         return metadata_doc
-
 
 class F4Parser:
     """Utility class to extract actionable data and documents from a single text file.

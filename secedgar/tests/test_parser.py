@@ -1,6 +1,7 @@
 import pytest
-from secedgar.parser import F4Parser, MetaParser
-
+from secedgar.parser import MetaParser, F4Parser
+from secedgar.parsers.form_d_parser import FDParser
+from secedgar.tests.utils import MockResponse, datapath
 
 class TestParser:
     parser = MetaParser()
@@ -159,3 +160,37 @@ class TestF4Parser:
                 ]
             }
         }
+
+class TestFDParser:
+    parser = FDParser()
+
+    def read_text_file(self, filename: str) -> str:
+        """ Read text file """
+        with open(datapath("filings", "form_d", filename)) as f:
+            return f.read()
+
+    def test_process_document_metadata_form_d_sample(self):
+        doc = self.read_text_file('SampleFormD.xml')
+        form_d = self.parser.process(doc)
+
+        # assert form_d.company_data.central_index_key = ''
+        assert form_d.offering_sales_amount.total_offering_amount == 1000
+        assert form_d.offering_sales_amount.total_amount_sold == 100
+        assert form_d.offering_sales_amount.total_remaining == 900
+        assert form_d.offering_sales_amount.clarification_of_response == 'Clarification of Response'
+
+        assert form_d.industry_group.investment_fund_info.investment_fund_type == 'Venture Capital Fund'
+        assert form_d.industry_group.investment_fund_info.is_40_act is True
+
+    def test_process_document_metadata_form_d(self):
+        doc = self.read_text_file('0001980155-23-000002.txt')
+        form_d = self.parser.process(doc)
+
+        # assert form_d.company_data.central_index_key = ''
+        assert form_d.offering_sales_amount.total_offering_amount == 111000
+        assert form_d.offering_sales_amount.total_amount_sold == 111000
+        assert form_d.offering_sales_amount.total_remaining == 0
+        assert form_d.offering_sales_amount.clarification_of_response == 'Amounts shown here include totals from the Issuer and a parallel fund of the Issuer.'
+
+        assert form_d.industry_group.investment_fund_info.investment_fund_type == 'Venture Capital Fund'
+        assert form_d.industry_group.investment_fund_info.is_40_act is True
