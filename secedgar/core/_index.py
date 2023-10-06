@@ -3,6 +3,7 @@ import os
 import re
 import shutil
 import tempfile
+import logging
 from abc import abstractmethod
 from collections import namedtuple
 from queue import Empty, Queue
@@ -167,6 +168,7 @@ class IndexFilings(AbstractFiling):
             entry = FilingEntry(*fields,
                                 path=path,
                                 num_previously_valid=current_count)
+            logging.debug(f'{entry=} {self.entry_filter=}')
             if self.entry_filter is not None and not self.entry_filter(
                     entry):
                 continue
@@ -240,6 +242,7 @@ class IndexFilings(AbstractFiling):
         # Download tar files asynchronously into extract_directory
         tar_urls = self._get_tar_urls()
         inputs = [(url, os.path.join(extract_directory, url.split('/')[-1])) for url in tar_urls]
+        logging.debug(f'_unzip {inputs=}')
         loop = asyncio.get_event_loop()
         loop.run_until_complete(self.client.wait_for_download_async(inputs))
 
