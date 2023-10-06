@@ -161,6 +161,7 @@ class IndexFilings(AbstractFiling):
         current_count = 0
         entries = re.findall(r'^[0-9]+[|].+[|].+[|][0-9\-]+[|].+$',
                              idx_file, re.MULTILINE)
+        logging.debug(f'{entries=}')
         for entry in entries:
             fields = entry.split("|")
             fields[-1] = fields[-1].strip()  # get rid of carriage return or newline
@@ -189,6 +190,7 @@ class IndexFilings(AbstractFiling):
             urls (list of str): List of all URLs to get.
         """
         filings_dict = self.get_filings_dict()
+        logging.debug(f'{filings_dict=}')
         self._urls = {
             company:
             [self.client._prepare_query(entry.path) for entry in entries]
