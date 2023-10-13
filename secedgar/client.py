@@ -2,8 +2,10 @@
 import asyncio
 import os
 import time
+import logging
 
 import aiohttp
+from aiohttp import client_exceptions
 import requests
 import tqdm
 from bs4 import BeautifulSoup
@@ -246,10 +248,16 @@ class NetworkClient:
         """
         async def fetch_and_save(link, path, session):
             """Fetch link and save to path using session."""
-            contents = await self.fetch(link, session)
-            make_path(os.path.dirname(path))
-            with open(path, "wb") as f:
-                f.write(contents)
+            try:
+                if os.path.exists(path):
+                    return
+                contents = await self.fetch(link, session)
+                make_path(os.path.dirname(path))
+                with open(path, "wb") as f:
+                    f.write(contents)
+            except client_exceptions.ClientResponseError as e:
+                # Handle the specific exception here
+                logging.error(f"Caught a ClientResponseError: {e}")
 
         def batch(iterable, n):
             length = len(iterable)

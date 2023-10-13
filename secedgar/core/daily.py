@@ -1,12 +1,16 @@
+"""
+Class for retrieving all daily filings from https://www.sec.gov/Archives/edgar/daily-index/
+"""
 import datetime
 import os
+import logging
 
 from secedgar.core._index import IndexFilings
 from secedgar.utils import get_quarter
 
 
 class DailyFilings(IndexFilings):
-    """Class for retrieving all daily filings from https://www.sec.gov/Archives/edgar/daily-index.
+    """Class for retrieving all daily filings from https://www.sec.gov/Archives/edgar/daily-index/.
 
     Attributes:
         date (datetime.date): Date of daily filing to fetch.
